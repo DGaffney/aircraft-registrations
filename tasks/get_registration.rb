@@ -7,7 +7,7 @@ class GetRegistration
       response: response
     }).save!
     sleep(1)
-    self.perform_in(60*60*24*28, number)
+    self.class.perform_in(60*60*24*28, number)
   end
 
   def check_number(number)
