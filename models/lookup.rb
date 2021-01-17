@@ -1,6 +1,6 @@
 class Lookup
   include Mongoid::Document
   include Mongoid::Timestamps
-  field :number, String
-  field :response, Array
+  field :number, type: String
+  field :response, type: Array
 end
